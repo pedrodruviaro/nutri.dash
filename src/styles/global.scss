@@ -1,16 +1,12 @@
 :root {
-    --clr-neutral-100: #e3e3e3;
-    --clr-neutral-700: #18181b;
+    --clr-neutral-100: #f2f2f2;
+    --clr-neutral-700: #0d2601;
 
-    --clr-accent-primary: #da5026;
-    --clr-accent-secondary: #249c7c;
+    --clr-accent-green-600: #417310;
+    --clr-accent-green-500: #79a617;
+    --clr-accent-green-400: #a9bf7a;
 
-    --b-radius: 8px;
-
-    --clr-bg-body: var(--clr-neutral-700);
-
-    --ff-heading: "Source Sans Pro", sans-serif;
-    --ff-body: "Open Sans", sans-serif;
+    --ff-body: "Poppins", sans-serif;
 
     --spacing: 4rem;
     --container-width: min(90%, 62.5rem);
@@ -36,8 +32,8 @@ html {
 
 body {
     font-family: var(--ff-body);
-    background-color: var(--clr-bg-body);
-    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-700);
 }
 
 h1,
@@ -59,21 +55,21 @@ h6 {
     padding-block: var(--spacing);
 }
 
-::selection {
-    background-color: var(--clr-accent-primary);
-    color: var(--clr-neutral-100);
-}
+// ::selection {
+//     background-color: var(--clr-accent-primary);
+//     color: var(--clr-neutral-100);
+// }
 
-::-webkit-scrollbar {
-    width: 0.85em;
-}
+// ::-webkit-scrollbar {
+//     width: 0.85em;
+// }
 
-::-webkit-scrollbar-track {
-    background: var(--clr-neutral-100);
-}
+// ::-webkit-scrollbar-track {
+//     background: var(--clr-neutral-100);
+// }
 
-::-webkit-scrollbar-thumb {
-    background: var(--clr-accent-secondary);
-    border: 2px solid var(--clr-neutral-100);
-    border-radius: 8px;
-}
+// ::-webkit-scrollbar-thumb {
+//     background: var(--clr-accent-secondary);
+//     border: 2px solid var(--clr-neutral-100);
+//     border-radius: 8px;
+// }
