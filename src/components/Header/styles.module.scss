@@ -1,0 +1,40 @@
+.header {
+    height: 64px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.container {
+    width: var(--container-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > a {
+        margin-right: auto;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-right: 3rem;
+
+        a {
+            font-weight: 500;
+            transition: var(--transition);
+
+            &:hover,
+            &:focus {
+                color: var(--clr-accent-green-600);
+            }
+        }
+    }
+
+    button {
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}

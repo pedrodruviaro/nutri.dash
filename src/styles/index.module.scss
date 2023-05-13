@@ -1,0 +1,51 @@
+.main {
+    padding-block: var(--spacing);
+}
+
+.container {
+    width: var(--container-width);
+    margin-inline: auto;
+
+    h1 {
+        font-size: clamp(1.8rem, 3.5vw, 2rem);
+        margin-inline: auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.form {
+    margin-bottom: 3rem;
+
+    label {
+        display: grid;
+        font-weight: 500;
+        font-size: 0.9rem;
+
+        input {
+            max-width: 13rem;
+            border: 1.5px solid var(--clr-accent-green-400);
+            border-radius: 8px;
+            padding: 0.375rem 0.75rem;
+            color: var(--clr-neutral-700);
+            font-weight: 400;
+            outline: none;
+            transition: var(--transition);
+            font-size: 1rem;
+            margin-top: 0.25rem;
+
+            &:focus {
+                border-color: var(--clr-accent-green-600);
+            }
+
+            &::placeholder {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.patients {
+    display: grid;
+    gap: 2rem;
+}

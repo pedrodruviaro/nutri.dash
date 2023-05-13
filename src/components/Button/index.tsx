@@ -5,11 +5,17 @@ import styles from "./styles.module.scss";
 interface ButtonProps {
     children: ReactNode;
     href: string;
+    secondary?: boolean;
 }
 
-export default function Button({ children, href }: ButtonProps) {
+export default function Button({ children, href, secondary }: ButtonProps) {
     return (
-        <Link href={href} className={styles.button}>
+        <Link
+            href={href}
+            className={`${styles.button}${
+                secondary ? ` ${styles.secondary}` : ""
+            }`}
+        >
             {children}
         </Link>
     );
