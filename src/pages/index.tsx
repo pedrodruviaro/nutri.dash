@@ -41,7 +41,7 @@ export default function Dashboard({ patients }: DashBoardProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const patients = await getAllPatientsDashboard();
+    const patients = await getAllPatientsDashboard("pedrodruviaro@gmail.com");
 
     return {
         props: {
